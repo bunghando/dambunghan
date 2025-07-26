@@ -335,79 +335,171 @@ body {
     background: rgba(255,0,0,0.8);
     transform: scale(1.1);
 }
-/* Responsive Design cho Mobile */
-@media (max-width: 768px) {
+/* Responsive Design cho Mobile nhỏ */
+@media (max-width: 480px) {
     .chat-container { 
-        width: 100vw; 
-        height: 100vh; 
-        left: 0; 
-        right: 0; 
-        bottom: 0; 
-        border-radius: 0;
-        position: fixed;
+        width: 95vw; 
+        height: 60vh; 
+        left: 2.5vw; 
+        right: 2.5vw; 
+        bottom: 15vh; 
+        border-radius: 16px;
+        max-width: 320px;
+        max-height: 450px;
     }
     .chat-header {
-        padding: 15px;
-        gap: 10px;
+        padding: 10px;
+        gap: 6px;
     }
     .bot-avatar, .message-avatar {
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
     }
     .header-info h3 { 
-        font-size: 14px; 
+        font-size: 12px; 
     }
     .status { 
-        font-size: 11px; 
+        font-size: 9px; 
     }
     .api-btn, .minimize-btn, .close-btn {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
+        font-size: 11px;
     }
     .chat-messages {
-        padding: 15px;
-    }
-    .message {
-        gap: 8px;
-        margin-bottom: 8px;
+        padding: 10px;
     }
     .message-content {
-        max-width: 75%;
-        padding: 10px 12px;
+        max-width: 85%;
+        padding: 6px 8px;
     }
     .message-content p {
-        font-size: 13px;
+        font-size: 11px;
     }
     .chat-input-container {
-        padding: 15px;
+        padding: 10px;
     }
     .input-wrapper {
-        gap: 8px;
+        gap: 5px;
+        margin-bottom: 8px;
     }
     #messageInput {
-        padding: 12px 15px;
-        font-size: 14px;
+        padding: 8px 10px;
+        font-size: 12px;
     }
     .send-btn, .image-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+    .clear-chat-btn {
+        padding: 5px 8px;
+        font-size: 10px;
+    }
+    .chat-toggle {
         width: 40px;
         height: 40px;
         font-size: 16px;
-    }
-    .clear-chat-btn {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-    .chat-toggle {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
+        bottom: 10px;
+        right: 10px;
     }
     .top-marquee {
+        font-size: 10px;
+        padding: 3px 0;
+    }
+}
+
+/* Responsive Design cho Mobile */
+@media (max-width: 768px) {
+    .chat-container { 
+        width: 90vw; 
+        height: 70vh; 
+        left: 5vw; 
+        right: 5vw; 
+        bottom: 10vh; 
+        border-radius: 20px;
+        position: fixed;
+        max-width: 350px;
+        max-height: 500px;
+    }
+    .chat-container.minimized {
+        height: 60px;
+        width: 60px;
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+        border-radius: 50%;
+    }
+    .chat-header {
+        padding: 12px;
+        gap: 8px;
+    }
+    .bot-avatar, .message-avatar {
+        width: 36px;
+        height: 36px;
+    }
+    .header-info h3 { 
+        font-size: 13px; 
+    }
+    .status { 
+        font-size: 10px; 
+    }
+    .api-btn, .minimize-btn, .close-btn {
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
+    }
+    .chat-messages {
+        padding: 12px;
+    }
+    .message {
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+    .message-content {
+        max-width: 80%;
+        padding: 8px 10px;
+    }
+    .message-content p {
+        font-size: 12px;
+    }
+    .chat-input-container {
+        padding: 12px;
+    }
+    .input-wrapper {
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+    #messageInput {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    .send-btn, .image-btn {
+        width: 36px;
+        height: 36px;
         font-size: 14px;
-        padding: 6px 0;
+    }
+    .clear-chat-btn {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+    .chat-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .top-marquee {
+        font-size: 12px;
+        padding: 4px 0;
     }
     .side-images {
         display: none;
+    }
+    .container {
+        align-items: flex-end;
+        justify-content: center;
     }
 }
 
